@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My Skills</title>
+    </head>
+
+    <body>
+        <style>
+            * {
+                font-family: 'Gill Sans', sans-serif;
+                list-style: none;
+                padding: 0;
+                margin: 0;
+            }
+
+            body {
+                background: #333;
+                text-transform: uppercase;
+            }
+
+            h1 {
+                text-align: center;
+            }
+
+            h3 {
+                margin: 5px;
+            }
+
+            .skill {
+                width: 500px;
+                margin: 60px auto;
+                color: #fff;
+                padding: 20px;
+                box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+
+            }
+
+            .skill li {
+                margin: 20px 0;
+                padding: 10px;
+            }
+
+            .bar {
+                background: #353b48;
+                display: block;
+                height: 20px;
+                border: 1px solid rgba(0, 0, 0, 0.3);
+                border-radius: 10px;
+                overflow: hidden;
+                box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+                transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+            }
+
+            .bar:hover {
+                box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+
+            }
+
+            .bar span {
+                height: 20px;
+                float: left;
+                background: linear-gradient(135deg, rgba(236, 0, 140, 1)0%, rgba(252, 103, 103, 1.0)100%);
+            }
+
+            .html {
+                width: 90%;
+                animation: html 3s;
+            }
+
+            .css {
+                width: 70%;
+                animation: css 3s;
+            }
+
+            .cpp {
+                width: 90%;
+                animation: cpp 3s;
+
+            }
+
+            .JavaScript {
+                width: 80%;
+                animation: JavaScript 3s;
+            }
+
+            .reactjs {
+                width: 80%;
+                animation: 80%;
+            }
+
+            .sql {
+                width: 50%;
+                animation: sql 3s;
+            }
+        </style>
+        <div class="skill">
+            <h1>My Skills</h1>
+            <li>
+                <h3>HTML</h3>
+                <span class="bar"> <span class="html"></span></span>
+            </li>
+            <li>
+                <h3>CSS</h3>
+                <span class="bar"> <span class="css"></span></span>
+            </li>
+            <li>
+                <h3>C++</h3>
+                <span class="bar"> <span class="cpp"></span></span>
+            </li>
+            <li>
+                <h3>JavaScript</h3>
+                <span class="bar"> <span class="JavaScript"></span></span>
+            </li>
+            <li>
+                <h3>ReactJS</h3>
+                <span class="bar"> <span class="reactjs"></span></span>
+            </li>
+            <li>
+                <h3>SQl</h3>
+                <span class="bar"> <span class="sql"></span></span>
+            </li>
+        </div>
+    </body>
+
+</html>

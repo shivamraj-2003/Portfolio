@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Projects Section</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+            integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+
+    <body>
+        <style>
+            body {
+                background-color: bisque;
+            }
+
+            #portfolio {
+                padding: 50px 0;
+            }
+
+            .work-list {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+                grid-gap: 40px;
+                margin-top: 50px;
+            }
+
+            .work {
+                border-radius: 10px;
+                position: relative;
+                overflow: hidden;
+            }
+
+            .work img {
+                width: 100%;
+                border-radius: 10px;
+                display: block;
+                transition: transform 0.5s;
+            }
+
+            .layer {
+                width: 100%;
+                height: 0;
+                background: linear-gradient(rgba(0, 0, 0, 0.6), #ff004f);
+                border-radius: 10px;
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                overflow: hidden;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                text-align: center;
+                font-size: 14px;
+                transition: height 0.5s;
+            }
+
+            .layer a {
+                color: #ff004f;
+                text-decoration: none;
+                font-size: 18px;
+                background: #fff;
+                border-radius: 50%;
+                text-align: center;
+
+            }
+
+            .work:hover img {
+                transform: scale(1.1);
+            }
+
+            .work:hover .layer {
+                height: 100%;
+            }
+
+            .btn {
+                display: block;
+                margin: 50px auto;
+                width: fit-content;
+                border: 1px solid #ff004f;
+                padding: 14px 50px;
+                border-radius: 6px;
+                text-decoration: none;
+                color: #fff;
+                transition: background 0.5s;
+            }
+
+            .btn:hover {
+                background: #ff004f;
+            }
+        </style>
+        <div class="portfolio">
+            <div class="container">
+                <h1 class="sub-title">My Work</h1>
+                <div class="work-list">
+                    <div class="work">
+                        <img src="png.png">
+                        <div class="layer">
+                            <h3>Currency_Convertor Website</h3>
+                            <p>The website you used to convert
+                                any country currency
+                                to another country currency.
+                                <a href="./Currency Convertor/curr_convertor.html"><i
+                                        class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="tu.png">
+                        <div class="layer">
+                            <h3>Digital Clock</h3>
+                            <p>
+                                The Clock in which time is updated
+                                every second dependin upon the day,night.
+                                <a href="./clock/clock.html"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="ty.png">
+                        <div class="layer">
+                            <h3>Car animation Game</h3>
+                            <p>The Car animation game in which car runs
+                                on the road and
+                                produce some noise.
+                                <a href="./car game/game.html"><i
+                                        class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="pr.jpg">
+                        <div class="layer">
+                            <h3>Todo_Website</h3>
+                            <p>The website you used to add different
+                                list items
+                                and to remove it.
+                                <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="prc.png">
+                        <div class="layer">
+                            <h3>Rock scissors Paper Game</h3>
+                            <p>The Game you play with computer in this
+                                Game you Won or
+                                lose depends upon what you choose.
+                                <a href="./Rock and Scissors Game/rock.html"><i
+                                        class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="vec.png">
+                        <div class="layer">
+                            <h3>Basic Calculator </h3>
+                            <p>The web Calculator you used to calculate
+                                different
+                                arithmetic opeartions like
+                                addition subtraction.
+                                <a href="./Calculator/calculator.html"><i
+                                        class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="tic-tac-toe.png">
+                        <div class="layer">
+                            <h3>Tic-Tac-Toe Game</h3>
+                            <p>The Game in which if three patterns are match then you win otherwise Draw
+                                <a href="../Tic-Tac-Toe game/game.html"><i
+                                        class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="btn">See more</a>
+            </div>
+        </div>
+    </body>
+
+</html>
